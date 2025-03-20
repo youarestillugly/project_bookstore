@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"nodeapp.js",
-    "dev":"nodemon app.js",
+    "start": "nodeapp.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,9 +13,12 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "bcryptjs": "^3.0.2",
     "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "pg-promise": "^11.13.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
