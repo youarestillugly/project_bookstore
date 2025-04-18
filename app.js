@@ -10,6 +10,7 @@ const authRoutes = require('./routes/authRoutes');
 const homeRoutes = require('./routes/homeRoutes');
 const profileRoutes = require('./routes/profileRoutes');
 const bookRoutes = require("./routes/bookRoutes");
+const adminRoutes = require('./routes/adminRoutes');
 
 
 
@@ -19,7 +20,7 @@ dotenv.config();
 
 // Initialize Express app
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000; 
 
 
 app.use(bodyParser.json());
@@ -53,6 +54,7 @@ app.use('/auth', authRoutes);
 app.use('/', homeRoutes);
 app.use('/', profileRoutes);
 app.use("/", bookRoutes);
+app.use('/', adminRoutes);
 
 
 //for db connection
